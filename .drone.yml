@@ -1,0 +1,10 @@
+kind: pipeline
+type: docker
+name: test
+
+steps:
+  - name: Test Vint
+    image: python:3.9
+    commands:
+      - pip install vim-vint==0.3.21
+      - vint m3ql.vim

@@ -2,7 +2,7 @@
 " Language: M3 Query Language
 " Maintainer: Albert Wang
 
-if exists("b:current_syntax")
+if exists('b:current_syntax')
     finish
 endif
 
@@ -101,7 +101,7 @@ syn match m3qlSpecial '[=\(\)]'
 syn match m3qlComment "#.*$" contains=m3qlTodo
 
 " Set syntax
-let b:current_syntax = "m3ql"
+let b:current_syntax = 'm3ql'
 
 " Apply semantics
 hi def link m3qlFetch Statement

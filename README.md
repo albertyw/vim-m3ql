@@ -1,5 +1,7 @@
 # vim-m3ql
 
+[![Build Status](https://drone.albertyw.com/api/badges/albertyw/vim-m3ql/status.svg)](https://drone.albertyw.com/albertyw/vim-m3ql)
+
 Vim syntax highlighting for M3QL
 
 M3QL grammar is from https://github.com/m3db/m3
