@@ -95,6 +95,7 @@ syn keyword m3qlFunction transformNull
 syn keyword m3qlTodo contained TODO FIXME XXX NOTE
 
 " Matches
+syn match m3qlSpecial '[=\(\)]'
 
 " Regions
 syn match m3qlComment "#.*$" contains=m3qlTodo
@@ -105,6 +106,6 @@ let b:current_syntax = "m3ql"
 " Apply semantics
 hi def link m3qlFetch Statement
 hi def link m3qlFunction Statement
-hi def link m3qlFunction Statement
 hi def link m3qlComment Comment
 hi def link m3qlTodo Todo
+hi def link m3qlSpecial Special
