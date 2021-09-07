@@ -4,6 +4,8 @@
 
 Vim syntax highlighting for [M3](https://m3db.io/)'s query language (M3QL).
 
+![Vim-M3QL Example](/screenshot.png)
+
 ## Installation
 I recommend using Vim 8 or later, which includes a native third-party package handler.  If you're using Vim >8, install this package with:
 
