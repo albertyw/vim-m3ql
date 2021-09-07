@@ -7,4 +7,4 @@ steps:
     image: python:3.9
     commands:
       - pip install vim-vint==0.3.21
-      - vint m3ql.vim
+      - vint syntax/m3ql.vim
