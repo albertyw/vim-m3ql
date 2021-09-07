@@ -8,6 +8,7 @@ endif
 
 " Keywords
 syn keyword m3qlFetch fetch
+
 " M3QL Functions
 " Copied from https://github.com/m3db/m3/blob/master/site/content/architecture/m3query/functions.md
 syn keyword m3qlFunction abs
@@ -91,9 +92,12 @@ syn keyword m3qlFunction timeshift
 syn keyword m3qlFunction timestamp
 syn keyword m3qlFunction transformNull
 
+syn keyword m3qlTodo contained TODO FIXME XXX NOTE
+
 " Matches
 
 " Regions
+syn match m3qlComment "#.*$" contains=m3qlTodo
 
 " Set syntax
 let b:current_syntax = "m3ql"
@@ -101,3 +105,6 @@ let b:current_syntax = "m3ql"
 " Apply semantics
 hi def link m3qlFetch Statement
 hi def link m3qlFunction Statement
+hi def link m3qlFunction Statement
+hi def link m3qlComment Comment
+hi def link m3qlTodo Todo
