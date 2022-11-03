@@ -4,7 +4,7 @@ name: test
 
 steps:
   - name: Test Vint
-    image: python:3.10
+    image: python:3.11
     commands:
       - pip install vim-vint==0.3.21
       - vint */*.vim
