@@ -6,5 +6,5 @@ steps:
   - name: Test Vint
     image: python:3.13-alpine
     commands:
-      - pip install vim-vint==0.3.21
+      - pip install setuptools vim-vint==0.3.21
       - vint */*.vim
